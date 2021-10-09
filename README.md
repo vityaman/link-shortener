@@ -1,8 +1,13 @@
 # LinkShortener  
+
 <br/>
+
 # Requests  
+
 <br/><br/>
+
 ## POST: /api/link/post  
+
 <br/>
 
 ### Post link to the service  
@@ -52,9 +57,13 @@ timeExcision: int64 - time in unixtime when the link will expire
 - 404 - User not found (wrong login)
 - 403 - Access denied (wrong login or password)
 
+
 <br/><br/>
+
 ## DELETE: /api/link/delete  
+
 <br/>
+
 ### Delete your link from the service  
 shortLink: string - short link to to delete  
 userAccessData.login: string - user login  
@@ -84,8 +93,11 @@ userAccessData.password: string - user password
 - 403 - Access denied (wrong login or password, given user is not owner)
 
 <br/><br/>
+
 ## POST: /api/user/signUp
+
 <br/>
+
 ### Register user  
 username: string - user name  
 password: string - user password  
@@ -107,9 +119,13 @@ userLogin: string - user login to use as a part of UserAccessData
 ### Errors:
 - No errors
 
+
 <br/><br/>
+
 ## PUT: /api/user/changePassword
+
 <br/>
+
 ### Change user password
 newPassword: string - new user password  
 userAccessData.login: string - user login  
