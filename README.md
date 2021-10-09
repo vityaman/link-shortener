@@ -1,5 +1,8 @@
 # LinkShortener  
 
+# What is this?
+This is a link shortener.
+
 <br/>
 
 ## UML
