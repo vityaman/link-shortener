@@ -5,9 +5,9 @@
 ## POST: /api/link/post
 
 ### Post link to the service
-link: string - url to shorten
-passcode: string - passcode for your link
-timeExcision: int64 - time when link will expire (in unixtime), null if link won't expire
+- link: string - url to shorten
+- passcode: string - passcode for your link
+- timeExcision: int64 - time when link will expire (in unixtime), null if link won't expire
 ```json
 { 
   	"link": "https://www.unixtimestamp.com/",  
@@ -17,11 +17,11 @@ timeExcision: int64 - time when link will expire (in unixtime), null if link won
 ```
 
 
-link: string - url to shorten
-passcode: string - passcode for your link
-timeExcision: int64 - time when link will expire (in unixtime), null if link won't expire
-userAccessData.login: string - user login
-userAccessData.password: string - user password
+- link: string - url to shorten
+- passcode: string - passcode for your link
+- timeExcision: int64 - time when link will expire (in unixtime), null if link won't expire
+- userAccessData.login: string - user login
+- userAccessData.password: string - user password
 ```json
 {
 	"link": "https://www.unixtimestamp.com/",
@@ -36,8 +36,8 @@ userAccessData.password: string - user password
 ```
 
 ### Response (200)
-shortLink: string - short link to pass to .../{shortLink} to redirect to original link
-timeExcision: int64 - time in unixtime when the link will expire
+- shortLink: string - short link to pass to .../{shortLink} to redirect to original link
+- timeExcision: int64 - time in unixtime when the link will expire
 ```json
 {
 	"shortLink": "47K8aNS",
@@ -54,9 +54,9 @@ timeExcision: int64 - time in unixtime when the link will expire
 ## DELETE: /api/link/delete
 
 ### Delete your link from the service
-shortLink: string - short link to to delete
-userAccessData.login: string - user login
-userAccessData.password: string - user password
+- shortLink: string - short link to to delete
+- userAccessData.login: string - user login
+- userAccessData.password: string - user password
 ```json
 {
 	"shortLink": "47K8aNS",
@@ -84,8 +84,8 @@ userAccessData.password: string - user password
 ## POST: /api/user/signUp
 
 ### Register user
-username: string - user name
-password: string - user password
+- username: string - user name
+- password: string - user password
 ```json
 {
   	"username": "vitya",
@@ -94,7 +94,7 @@ password: string - user password
 ```
 
 ### Response (200)
-userLogin: string - user login to use as a part of UserAccessData
+- userLogin: string - user login to use as a part of UserAccessData
 ```json
 {
 	"userLogin": "1EaoKA"
@@ -108,9 +108,9 @@ userLogin: string - user login to use as a part of UserAccessData
 ## PUT: /api/user/changePassword
 
 ### Change user password
-newPassword: string - new user password
-userAccessData.login: string - user login
-userAccessData.password: string - user password
+- newPassword: string - new user password
+- userAccessData.login: string - user login
+- userAccessData.password: string - user password
 ```json
 {
 	"userAccessData":
