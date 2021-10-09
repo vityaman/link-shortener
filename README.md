@@ -18,8 +18,6 @@ https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&n
 
 ## POST: /api/link/post  
 
-<br/>
-
 ### Post link to the service  
 link: string - url to shorten  
 passcode: string - passcode for your link  
@@ -72,8 +70,6 @@ timeExcision: int64 - time in unixtime when the link will expire
 
 ## DELETE: /api/link/delete  
 
-<br/>
-
 ### Delete your link from the service  
 shortLink: string - short link to to delete  
 userAccessData.login: string - user login  
@@ -106,8 +102,6 @@ userAccessData.password: string - user password
 
 ## POST: /api/user/signUp
 
-<br/>
-
 ### Register user  
 username: string - user name  
 password: string - user password  
@@ -133,8 +127,6 @@ userLogin: string - user login to use as a part of UserAccessData
 <br/><br/>
 
 ## PUT: /api/user/changePassword
-
-<br/>
 
 ### Change user password
 newPassword: string - new user password  
